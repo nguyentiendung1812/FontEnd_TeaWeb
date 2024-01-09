@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+}
+.navbar{
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    background: white;
+}
+.navbar.fixed{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar .subTitle{
+    display: flex;
+    align-items: center;
+}
+.navbar .subTitle .logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.navbar .subTitle .title{
+    margin-left: 10px;
+}
+.navbar .subTitle .title span{
+    font-size: 10px;
+    color: green;
+}
+.navbar .subTitle .title p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.navbar .navigation ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar .navigation ul li:hover{
+    text-decoration: underline;
+}
+a{
+    color: black;
+}
+
+/* hero**************** */
+.hero{
+    position: relative;
+    
+}
+.images .item1 {
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.9;
+}
+.hero .infor{
+    position: absolute;
+    top: 180px;
+    left: 100px;
+    color: white;
+}
+.hero .infor .title_1{
+    font-size: 30px;
+    color: greenyellow;
+}
+.hero .infor .title_2{
+    font-size: 50px;
+    color:white;
+}
+.hero .infor .desc{
+    margin-top: 10px;
+    width: 350px;
+}
+.hero .infor .btn_infor{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px;
+    background: greenyellow;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+/* HOT_PRODUCT**************** */
+.hotProduct{
+    margin-top: 120px;
+}
+.nav_product{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+.nav_product .nav-left{
+    position: absolute;
+    top: 190px;
+    left: 30px;
+}
+.nav_product .nav-left a i, .nav-right a i{
+    color: green;
+    transition: 0.5s;
+}
+.nav_product .nav-left a i:hover, .nav-right a i:hover{
+    transform: scale(1.1,1.1);
+}
+.nav_product .nav-right{
+    position: absolute;
+    top: 190px;
+    right: 30px;
+}
+.hotProduct .title{
+    text-align: center;
+}
+.hotProduct .items{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hotProduct .items .item .hot_item1{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid white;
+    outline: none;  
+    transition: 0.3s;
+}
+.hotProduct .items .item .hot_item1:hover{
+    cursor: pointer;    
+    transform: scale(1.1, 1.1);
+}
+.hotProduct .items .item .desc{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* intro*********************** */
+
+.intro{
+    margin-top: 130px;
+}
+.intro .title{
+    text-align: center;
+}
+.intro .content{
+    position: relative;
+    margin-top: 50px;
+}
+.intro .content .infor{
+    position: absolute;
+    padding: 20px;
+    top: 30%;
+    left: 30%;
+    color: black;
+    background: #E8F1C4;
+    border-radius: 8px;
+}
+.intro .content .infor .title_content{
+    margin-left: 25px;
+    font-size: 45px;
+    color: black;
+}
+.intro .content .infor .desc{
+    width: 500px;
+    padding: 15px;
+    font-size: 15px;
+}
+.intro .content .infor .btn_content{
+    font-size: 20px;
+    padding: 15px 20px;
+    background: #AABC44;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.intro .content .infor .btn_content:hover{
+    text-decoration: underline;
+}
+.intro .content .images .img_intro{
+    width: 100vw;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* author******************* */
+.author{
+    margin-top: 120px;
+}
+.author .title{
+    text-align: center;
+}
+.author .content{
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #ccc;
+}
+.author .content .item{
+    padding: 20px;
+    width: 20%;
+    height: 500px;
+}
+.author .content .item img{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+}
+.author .content .item .name_author{
+    margin-top: 15px;
+    font-size: 25px;
+    text-align: center;
+    padding: 5px;
+}
+.author .content .item .desc{
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* BUY nOW************** */
+
+.buyNow {
+    margin-top: 200px;
+}
+.buyNow h1{
+    text-align: center;
+}
+.buyNow .content{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.buyNow .content .ipBuy{
+    width: 600px;
+    height: 50px;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid #AABC44;
+    outline: none;
+}
+.buyNow .content .btnBuy{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background: #AABC44;
+    border: 2px solid #AABC44;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.buyNow .content .btnBuy:hover{
+    opacity: 0.8;
+}
+
+/* footer */
+
+footer{
+    margin-top: 150px;
+    padding-bottom: 50px;
+}
+footer .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    background: #F1F1E7;
+    padding: 30px;
+    font-size: 15px;
+}
+footer .content .colum1 .sub-title{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+footer .content .colum1 .sub-title span{
+    color: green;
+    font-size: 15px;
+}
+footer .content .colum1 .sub-title p.title{
+    font-weight: 700;
+    font-size: 20px;
+}
+footer .content .colum1 .sub-title .logo{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+footer .content .colum1 ul li, .colum2 ul li, .colum3 ul li{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.social{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+}

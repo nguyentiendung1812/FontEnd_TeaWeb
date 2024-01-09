@@ -1,0 +1,172 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.admin{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.header_sidebar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #495058;
+}
+.header_sidebar span{
+    margin-left: 20px;
+}
+.sidebar{
+    position: fixed;
+    width: 25%;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    background: #ccc;
+    color: #495058;
+    font-size: 20px;
+}
+.sidebar .info_sidebar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #495058;
+}
+.sidebar .info_sidebar .avt {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.btn_sidebar{
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: #E23548;
+    color: white;
+}
+.control_sidebars{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #495058;
+}
+
+ a{
+    cursor: pointer;
+}
+
+.header_content{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    border-bottom: 1px solid #495058;
+    background: #ffff;
+}
+.header_content .search{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.header_content .search .search_input{
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+}
+.header_content .btn_search{
+    width: 30px;
+    height: 40px;
+    border: none;
+}
+.header_content .option{
+    margin-top: 20px;
+    margin-left: 60%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #F5F6FA;
+}
+.content{
+    width: 100%;
+    margin-left: 26%;
+}
+.content_manager-header{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background: #F5F6FA;
+    padding: 10px;
+}
+.content_manager-header .title{
+    font-size: 30px;
+    font-weight: normal;
+}
+.content_manager-header .home{
+    margin-left: 70%;
+}
+.list_box-manager{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box_manager{
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 20%;
+    background: #E23548;
+    color: white;
+    border-radius: 4px;
+}
+.box_manager .number{
+    font-size: 30px
+}
+.box_manager .desc{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.box_manager .more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    background: rgba(50, 50, 50, 0.4);
+    font-size: 15px;
+}
+.icon_right{
+    color: white;
+}
+.box_manager.news{
+    background: rgb(23, 162, 183);
+}
+.box_manager.author{
+    background: rgb(39, 168, 68);
+}
+.box_manager.account{
+    background: rgb(254, 193, 7);
+}
